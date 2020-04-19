@@ -52,7 +52,7 @@ class CoronaCoin {
 	$arr['method'] = 'transfer';
 	$arr['to_id'] = $to_id;
 	$arr['amount'] = $amount;
-	return $this->post_send('https://corona-coin.ru/api/',$arr);
+	return $this->post_send('https://corona-coins.ru/api/',$arr);
 	}
 
 		/**
@@ -63,7 +63,7 @@ class CoronaCoin {
 	$arr['token'] = $this->apikey;
 	$arr['method'] = 'score';
 	$arr['user_ids'] = $user_ids;
-	return $this->post_send('https://corona-coin.ru/api/',$arr);
+	return $this->post_send('https://corona-coins.ru/api/',$arr);
 	}
 
 		/**
@@ -76,7 +76,7 @@ class CoronaCoin {
 	$arr['method'] = 'history';
 	$arr['type'] = $type;
 	$arr['offset'] = $offset;
-	return $this->post_send('https://corona-coin.ru/api/',$arr);
+	return $this->post_send('https://corona-coins.ru/api/',$arr);
 	}
 
 		/**
